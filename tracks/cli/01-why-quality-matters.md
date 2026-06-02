@@ -20,7 +20,7 @@ Concepts: [Agent ROI](../../concepts/c1-agent-roi.md) ·
 
    `Note: Part A can occasionally succeed on the first shot, but it usually burns more tokens/credits because the agent is guessing.`
 
-Record the scorecard for Part B.
+Record the scorecard for Part C.
 
 ---
 
@@ -30,13 +30,12 @@ Record the scorecard for Part B.
 2. Use a precise prompt that names the file, the bug, and a **stop condition**:
 
    ```text
-   In @sample-app/src/tasks.ts, the test "includes tasks exactly equal to the threshold" (in @sample-app/src/tasks.test.ts) is failing. filterByMinPriority should treat
-   minPriority as INCLUSIVE (>=), not exclusive (>). Fix only that function, then tell me to run `npm test` and stop. Do not change anything else.
+   In @sample-app/src/tasks.ts, the test "includes tasks exactly equal to the threshold" (in @sample-app/src/tasks.test.ts) is failing. filterByMinPriority should treat minPriority as INCLUSIVE (>=), not exclusive (>). Fix only that function, then tell me to run `npm test` and stop. Do not change anything else.
    ```
 
 3. In a normal terminal: `cd sample-app && npm test` → expect **4/4 pass**.
 
-Record the scorecard for Part B.
+Record the scorecard for Part C.
 
 ---
 

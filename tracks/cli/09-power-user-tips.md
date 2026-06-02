@@ -53,6 +53,16 @@ recency bias.
 
 > `copilot --resume` reloads a full transcript; a **summary-seeded new session** is often far cheaper for the same continuity.
 
+**Or let the CLI do it in one command** with `/compact`:
+
+```text
+/compact
+```
+
+`/compact` compresses your conversation history in place, replacing the long transcript with a summary while keeping you in the same session. The CLI also **auto-compacts** in the background when you approach ~95% of the token limit, so sessions can run almost indefinitely. Use `/context` to see a token-usage breakdown and decide *when* a manual `/compact` is worth it. Press `Esc` to cancel a compaction if you change your mind.
+
+> Rule of thumb: `/compact` to **continue** the same task cheaply; a summary-seeded **new** session to start a clean, unrelated task.
+
 ---
 
 ## 4. Script repeatable guardrail loops
@@ -83,6 +93,7 @@ Promote recurring fixes into `AGENTS.md` (Module 08) so you never pay for that l
 
 ## Expected outcome
 
-You can pre-filter inputs with pipes, keep output and sessions lean, script guardrail loops, and use scorecard history to improve your defaults.
+You can pre-filter inputs with pipes, keep output and sessions lean, script guardrail loops,
+compress context with `/compact` and use scorecard history to improve your defaults.
 
 ➡️ Next: [10 — Capstone](10-capstone.md)

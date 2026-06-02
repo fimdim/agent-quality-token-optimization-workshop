@@ -58,7 +58,7 @@ Both tracks share:
 
 ## Workshop structure
 
-The deck has three parts; the labs follow the same arc:
+The workshop has three parts; the labs follow the same arc:
 
 1. **Why agent quality matters** → Modules 00–01
 2. **LLM & agent fundamentals** → Module 02
@@ -66,7 +66,7 @@ The deck has three parts; the labs follow the same arc:
 4. **Advanced controls & power-user habits** → Modules 08–09
 5. **Capstone** → Module 10
 
-| #   | Module                           | Concept from the deck                         | Level |
+| #   | Module                           | Concept                                       | Level |
 | --- | -------------------------------- | --------------------------------------------- | ----- |
 | 00  | Setup & ROI mindset              | Maximize token value                          | 🟢    |
 | 01  | Why quality matters              | Agent ROI + compounding error                 | 🟢    |

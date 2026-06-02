@@ -27,7 +27,7 @@ Concept: [Context engineering](../../concepts/c3-context-engineering.md)
 2. **Exit the session** (Ctrl+D or `/exit`) and start a **new** `copilot` session. Ask:
 
    ```text
-   What was the secret word?
+   What was the secret word? Don't search the codebase.
    ```
 
 It won't know from the memory, a new session is a blank context. The "memory" you feel within a session is just the transcript being re-sent.
@@ -71,6 +71,13 @@ The second answer implicitly re-includes everything from turn 1. In a long sessi
 
 2. Did it honor the buried "never throw" rule?
 3. New session: move that rule to the **end**, right before the request. Compare compliance.
+
+   ```text
+   Here are some coding standards: [write 8–10 lines of filler standards].
+   [write 8–10 more lines of filler standards]
+   Now, write a TypeScript function that divides two numbers.
+   IMPORTANT: every function must return a Result type, never throw.
+   ```
 
 You'll usually get better adherence when the critical rule is **last** (recency) rather than buried in the **middle**.
 
