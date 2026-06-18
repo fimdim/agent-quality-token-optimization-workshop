@@ -43,13 +43,14 @@ Record the scorecard for Part C.
 1. **Start a brand-new Chat session** (clean context, important).
 2. Open the terminal and run `cd sample-app && npm test`
 3. **Agent** mode. Add precise context: drag and drop [`sample-app/src/tasks.ts`](../../sample-app/src/tasks.ts) and [`sample-app/src/tasks.test.ts`](../../sample-app/src/tasks.test.ts) into the chat.
-4. **Agent** mode. Add precise context in the prompt from your test:
+4. Use a precise prompt with the information from your test and a **stop condition**:
    ```text
    Use the #terminalLastCommand information to fix the failing test directly. Modify only that function, then tell me to run `npm test` and stop. Do not change anything else.
    ```
 5. Run `npm test` in the terminal. Confirm **4/4 pass**.
 
 Record the scorecard for Part C.
+
 ---
 
 ## Part C : Compare
