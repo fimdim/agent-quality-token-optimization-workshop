@@ -48,24 +48,26 @@ Record the scorecard for Part C.
    Use the #terminalLastCommand information to fix the failing test directly. Modify only that function, then tell me to run `npm test` and stop. Do not change anything else.
    ```
 5. Run `npm test` in the terminal. Confirm **4/4 pass**.
+
+Record the scorecard for Part C.
 ---
 
 ## Part C : Compare
 
-| Metric | Part A (gamble) | Part B (invest) |
-| --- | --- | --- |
-| Tokens / AI credits used | | |
-| Retries to success | | |
-| Agent turns | | |
-| Tests green? | | |
+| Metric | Part A (gamble) | Part B1 (invest) | Part B2 (alternative) |
+| --- | --- | --- | --- |
+| Tokens / AI credits used | | | |
+| Retries to success | | | |
+| Agent turns | | | |
+| Tests green? | | | |
 
-**Reflection:** Part B almost always wins on *every* axis, fewer tokens *and* a correct result. That's the ROI principle in action: the "bigger" first prompt was the cheaper path.
+**Reflection:** Part B (1&2) almost always wins on *every* axis, fewer tokens *and* a correct result. That's the ROI principle in action: the "bigger" first prompt was the cheaper path.
 
 ---
 
 ## Compounding-error tie-in
 
-Part A failed partly because the agent had to *guess* several things in a row (which file, which bug, how to verify). Each guess is a step with `p < 1`, and `p^n` collapses fast. Part B removed the guesses, pushing each step's `p` toward 1.0.
+Part A failed partly because the agent had to *guess* several things in a row (which file, which bug, how to verify). Each guess is a step with `p < 1`, and `p^n` collapses fast. Part B (1&2) removed the guesses, pushing each step's `p` toward 1.0.
 
 ---
 
