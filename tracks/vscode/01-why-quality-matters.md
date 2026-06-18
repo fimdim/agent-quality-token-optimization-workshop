@@ -42,11 +42,12 @@ Record the scorecard for Part C.
 
 1. **Start a brand-new Chat session** (clean context, important).
 2. Open the terminal and run `cd sample-app && npm test`
-3. **Agent** mode. Add precise context in the prompt from your test:
+3. **Agent** mode. Add precise context: drag and drop [`sample-app/src/tasks.ts`](../../sample-app/src/tasks.ts) and [`sample-app/src/tasks.test.ts`](../../sample-app/src/tasks.test.ts) into the chat.
+4. **Agent** mode. Add precise context in the prompt from your test:
    ```text
    Use the #terminalLastCommand information to fix the failing test directly. Modify only that function, then tell me to run `npm test` and stop. Do not change anything else.
    ```
-4. Run `npm test` in the terminal. Confirm **4/4 pass**.
+5. Run `npm test` in the terminal. Confirm **4/4 pass**.
 ---
 
 ## Part C : Compare
@@ -70,6 +71,6 @@ Part A failed partly because the agent had to *guess* several things in a row (w
 
 ## Expected outcome
 
-You have two scorecards proving that an up-front investment in context + a stop condition beats retry-until-it-works on retries, turns, *and* correctness.
+You have two (or three) scorecards proving that an up-front investment in context + a stop condition beats retry-until-it-works on retries, turns, *and* correctness.
 
 ➡️ Next: [02 — How the model thinks](02-how-the-model-thinks.md)
