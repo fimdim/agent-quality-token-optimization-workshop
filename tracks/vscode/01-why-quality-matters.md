@@ -38,10 +38,12 @@ Record the scorecard for Part C.
 
 Record the scorecard for Part C.
 
-## Part B2 : Invest up front (alternative way)
+## Part B2 : Invest up front (variant using terminal output)
+
+Do this after Part B1 so you can compare the scorecards; this variant uses the failing test output instead of spelling out the fix up front.
 
 1. **Start a brand-new Chat session** (clean context, important).
-2. Open the terminal and run `cd sample-app && npm test`
+2. Open the terminal and run `cd sample-app && npm test`.
 3. **Agent** mode. Add precise context: drag and drop [`sample-app/src/tasks.ts`](../../sample-app/src/tasks.ts) and [`sample-app/src/tasks.test.ts`](../../sample-app/src/tasks.test.ts) into the chat.
 4. Use a precise prompt with the information from your test and a **stop condition**:
    ```text
