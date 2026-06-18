@@ -40,14 +40,14 @@ Record the scorecard for Part C.
 
 ## Part B2 : Invest up front (variant using terminal output)
 
-Do this after Part B1 so you can compare the scorecards; this variant uses the failing test output instead of spelling out the fix up front.
+Do this after Part B1 so you can compare the scorecards; this variant uses the failing test output instead of spelling out the fix up front. In VSCode you can use #terminalLastCommand instead of copy/pasting the output.
 
 1. **Start a brand-new Chat session** (clean context, important).
 2. Open the terminal and run `cd sample-app && npm test`.
 3. **Agent** mode. Add precise context: drag and drop [`sample-app/src/tasks.ts`](../../sample-app/src/tasks.ts) and [`sample-app/src/tasks.test.ts`](../../sample-app/src/tasks.test.ts) into the chat.
-4. Use a precise prompt with the information from your test and a **stop condition**:
+4. Use a precise prompt using the failing `npm test` output and a **stop condition**:
    ```text
-   Use the #terminalLastCommand information to fix the failing test directly. Modify only that function, then tell me to run `npm test` and stop. Do not change anything else.
+   Use the #terminalLastCommand information to fix the failing test directly. Modify only the production-code function that is failing (do not change tests), then tell me to run `npm test` and stop. Do not change anything else.
    ```
 5. Run `npm test` in the terminal. Confirm **4/4 pass**.
 
@@ -64,18 +64,18 @@ Record the scorecard for Part C.
 | Agent turns | | | |
 | Tests green? | | | |
 
-**Reflection:** Part B (1&2) almost always wins on *every* axis, fewer tokens *and* a correct result. That's the ROI principle in action: the "bigger" first prompt was the cheaper path.
+**Reflection:** Parts B1 and B2 almost always win on *every* axis, fewer tokens *and* a correct result. That's the ROI principle in action: the "bigger" first prompt was the cheaper path.
 
 ---
 
 ## Compounding-error tie-in
 
-Part A failed partly because the agent had to *guess* several things in a row (which file, which bug, how to verify). Each guess is a step with `p < 1`, and `p^n` collapses fast. Part B (1&2) removed the guesses, pushing each step's `p` toward 1.0.
+Part A failed partly because the agent had to *guess* several things in a row (which file, which bug, how to verify). Each guess is a step with `p < 1`, and `p^n` collapses fast. Parts B1 and B2 removed the guesses, pushing each step's `p` toward 1.0.
 
 ---
 
 ## Expected outcome
 
-You have two (or three) scorecards proving that an up-front investment in context + a stop condition beats retry-until-it-works on retries, turns, *and* correctness.
+You have three scorecards proving that an up-front investment in context + a stop condition beats retry-until-it-works on retries, turns, *and* correctness.
 
 ➡️ Next: [02 — How the model thinks](02-how-the-model-thinks.md)
