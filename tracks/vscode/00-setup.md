@@ -8,13 +8,27 @@
 
 ## 1. Verify Copilot
 
+### 1.1 Verify Copilot Chat
+
 1. Open the Chat view: `Ctrl+Alt+I` (Windows/Linux) or `⌃⌘I` (macOS).
 2. Confirm you can see:
    - the **mode** dropdown: **Ask · Plan · Agent**
    - the **model picker** (e.g. "Auto", plus named models)
 3. In **Ask** mode, type: `What can you help me with in this workspace?` and confirm you get a response.
 
-✅ **Checkpoint:** you received a reply and can switch between Ask/Plan/Agent.
+✅ **Checkpoint:** You received a reply and can switch between Ask/Plan/Agent.
+
+### 1.2 Verify Agent Debug Logs
+
+After your first conversation:
+
+1. Click `Show Agent Debug Logs` in the three-dot menu next to the gear icon in the upper-right corner (Views and more actions...), or open the Command Palette and search for `Open Agent Debug Logs`.
+2. Click the conversation title to see metrics such as turns, token usage, tool calls, etc.
+3. If you don't see any numbers, restart your VS Code instance.
+
+✅ **Checkpoint:** You can see your token usage for every conversation in the Agent Debug Logs.
+
+> See [Agent Debug Log Panel](https://code.visualstudio.com/docs/agents/agent-troubleshooting/chat-debug-view) for guidance.
 
 ---
 
