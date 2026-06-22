@@ -45,7 +45,7 @@ Do this after Part B1 so you can compare the scorecards; this variant uses the f
 1. **Start a brand-new Chat session** (clean context, important).
 2. Open the terminal and run `cd sample-app && npm test`.
 3. **Agent** mode. Add precise context: drag and drop [`sample-app/src/tasks.ts`](../../sample-app/src/tasks.ts) and [`sample-app/src/tasks.test.ts`](../../sample-app/src/tasks.test.ts) into the chat.
-4. Use a precise prompt using the failing `npm test` output and a **stop condition**:
+4. Use a precise prompt that includes the failing `npm test` output and a **stop condition**:
    ```text
    Use the #terminalLastCommand information to fix the failing test directly. Modify only the production-code function that is failing (do not change tests), then tell me to run `npm test` and stop. Do not change anything else.
    ```
