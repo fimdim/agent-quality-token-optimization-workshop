@@ -40,7 +40,7 @@ Record the scorecard for Part C.
 
 ## Part B2 : Invest up front (variant using terminal output)
 
-Do this after Part B1 so you can compare the scorecards; this variant uses the failing test output instead of spelling out the fix up front. In VS Code you can use #terminalLastCommand instead of copy/pasting the output.
+Do this after Part B1 so you can compare the scorecards; this variant uses the failing test output instead of spelling out the fix up front. In VS Code you can use `#terminalLastCommand` instead of copy/pasting the output.
 
 1. **Start a brand-new Chat session** (clean context, important).
 2. Open the terminal and run `cd sample-app && npm test`.
