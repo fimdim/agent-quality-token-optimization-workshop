@@ -24,7 +24,7 @@
 
 After your first conversation:
 
-1. Click `Show Agent Debug Logs` in the three-dot menu next to the gear icon in the upper-right corner (Views and more actions...), or open the Command Palette and search for `Open Agent Debug Logs`.
+1. Click `Show Agent Debug Logs` in the three-dot menu next to the gear icon in the upper-right corner (Views and more actions...), or open the Command Palette and run `Developer: Open Agent Debug Logs`.
 2. Click the conversation title to see metrics such as turns, token usage, tool calls, etc.
 3. If you don't see any numbers, restart your VS Code instance.
 
