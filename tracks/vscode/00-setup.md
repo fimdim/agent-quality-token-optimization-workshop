@@ -20,9 +20,11 @@
 
 ### 1.2 Verify Agent Debug Logs
 
+> Note: This repo enables Agent Debug Log file logging via `.vscode/settings.json`. To disable writing logs to disk, set `"github.copilot.chat.agentDebugLog.fileLogging.enabled": false` in your workspace settings, but you won't be able to follow this step nor see metrics easily.
+
 After your first conversation:
 
-1. Click `Show Agent Debug Logs` in the three-dot menu next to the gear icon in the upper-right corner (Views and more actions...), or open the Command Palette and search for `Open Agent Debug Logs`.
+1. Click `Show Agent Debug Logs` in the three-dot menu next to the gear icon in the upper-right corner (Views and more actions...), or open the Command Palette and run `Developer: Open Agent Debug Logs`.
 2. Click the conversation title to see metrics such as turns, token usage, tool calls, etc.
 3. If you don't see any numbers, restart your VS Code instance.
 
