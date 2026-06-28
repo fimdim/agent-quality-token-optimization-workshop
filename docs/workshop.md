@@ -1332,7 +1332,7 @@ This track teaches the workshop using **GitHub Copilot in Visual Studio Code** (
 
 - [ ] VS Code installed
 - [ ] **GitHub Copilot** + **GitHub Copilot Chat** extensions installed and signed in
-- [ ] Sample app dependencies installed (`cd sample-app && npm install`)
+- [ ] Sample app dependencies installed (`npm install`)
 - [ ] You can open the Chat view (`Ctrl+Alt+I` / `⌃⌘I`) and see the **mode** dropdown (Ask · Plan · Agent) and the **model picker**
 
 ### Modules
