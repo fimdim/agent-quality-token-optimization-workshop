@@ -372,7 +372,7 @@ This track teaches the workshop using the **GitHub Copilot CLI** (`copilot`). Wo
 
 - [ ] Copilot CLI installed (e.g. `npm install -g @github/copilot`) — run `copilot --version`
 - [ ] Authenticated: run `copilot`, then `/login`
-- [ ] Sample app dependencies installed (`cd sample-app && npm install`)
+- [ ] Sample app dependencies installed (`npm install`)
 - [ ] You can start an interactive session by running `copilot` from the repo root
 
 ### Modules
