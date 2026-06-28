@@ -5,13 +5,15 @@
 
 This workshop turns the _Agent Quality & Token Optimization_ workshop into a set of **hands-on labs**. You will not just read about the techniques, you will _practice_ them and **measure** the difference they make.
 
+The full workshop content is in [docs/workshop.md](docs/workshop.md).
+
 ---
 
 ## Run in GitHub Codespaces (zero local setup)
 
-The fastest way to start is a Codespace, Node.js, the sample app dependencies, and the Copilot extensions are all pre-configured by [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json).
+The fastest way to start is a Codespace. The sample app dependencies and Copilot extensions are pre-configured by [.devcontainer/devcontainer.json](https://github.com/fimdim/sample-app/blob/main/.devcontainer/devcontainer.json) in the **[fimdim/sample-app](https://github.com/fimdim/sample-app)** repository.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fimdim/agent-quality-token-optimization-workshop)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fimdim/sample-app)
 
 1. Click the badge (or **Code ▸ Codespaces ▸ Create codespace**).
 2. Wait for the container to build, `npm install` runs automatically in `sample-app/`.
@@ -40,16 +42,16 @@ Modules are ordered by increasing difficulty. Each module clearly marks its leve
 The workshop ships as **two fully separate tracks** covering the same concepts with
 tool-native instructions:
 
-| Track                  | Tool                                        | Start here                                           |
-| ---------------------- | ------------------------------------------- | ---------------------------------------------------- |
-| **VS Code**            | GitHub Copilot Chat / Agent mode in VS Code | [`tracks/vscode/README.md`](tracks/vscode/README.md) |
-| **GitHub Copilot CLI** | `copilot` command-line agent in a terminal  | [`tracks/cli/README.md`](tracks/cli/README.md)       |
+| Track                  | Tool                                        | Start here                                                             |
+| ---------------------- | ------------------------------------------- | ---------------------------------------------------------------------- |
+| **VS Code**            | GitHub Copilot Chat / Agent mode in VS Code | [Track 02 : VS Code](docs/workshop.md) in the workshop doc             |
+| **GitHub Copilot CLI** | `copilot` command-line agent in a terminal  | [Track 01 : GitHub Copilot CLI](docs/workshop.md) in the workshop doc  |
 
 Both tracks share:
 
-- [`concepts`](concepts/README.md) : short, **tool-agnostic** thinking exercises (no tool required).
-- [`sample-app`](sample-app/README.md) : a small, deliberately imperfect TypeScript API you will
-  improve throughout the labs.
+- **Concepts** : short, **tool-agnostic** thinking exercises (no tool required) — see the [Concepts section](docs/workshop.md) of the workshop doc.
+- **[sample-app](https://github.com/fimdim/sample-app)** : a small, deliberately imperfect TypeScript API you will
+  improve throughout the labs. It lives in its own repo: [github.com/fimdim/sample-app](https://github.com/fimdim/sample-app).
 
 > You can complete the **concepts** with pen and paper. The **track modules** use the
 > sample app so your prompts have something real to work on.
@@ -89,6 +91,7 @@ The workshop has three parts; the labs follow the same arc:
 - [Node.js 20+](https://nodejs.org/) and npm (for the sample app)
 - [Git](https://git-scm.com/)
 - A GitHub account with **GitHub Copilot** enabled
+- The **[sample-app](https://github.com/fimdim/sample-app)** repository — clone it from [github.com/fimdim/sample-app](https://github.com/fimdim/sample-app), or use the Codespace (which already includes it)
 
 **VS Code track**
 
