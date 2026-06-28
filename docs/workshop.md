@@ -1320,7 +1320,7 @@ VS Code track.
 
 ---
 
-# Track 02 : VS Studio
+# Track 02 : VS Code
 
 ## VS Code Track — Agent Quality & Token Optimization
 
