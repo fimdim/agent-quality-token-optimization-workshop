@@ -40,8 +40,8 @@ This workshop uses [fimdim/sample-app](https://github.com/fimdim/sample-app): a 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fimdim/sample-app)
 
 1. Click the badge (or **Code ▸ Codespaces ▸ Create codespace**).
-2. Wait for the container to build, `npm install` runs automatically in `sample-app/`.
-3. Open a terminal and verify: `cd sample-app && npm run build && npm test`
+2. Wait for the container to build, `npm ci` runs automatically at the repo root.
+3. Open a terminal and verify: `npm run build && npm test`
    (the build passes; **one** test fails on purpose, that's your first exercise).
 
 > Prefer local? Any machine with **Node.js 20+** works too, see the track setup module.
