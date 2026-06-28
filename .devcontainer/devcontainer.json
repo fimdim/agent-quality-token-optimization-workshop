@@ -1,33 +1,27 @@
 {
   "name": "Agent Quality & Token Optimization Workshop",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
 
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bullseye",
   "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest",
+      "installBicep": true
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/azure/azure-dev/azd:latest": {}
   },
 
+  // Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": [
-        "GitHub.copilot",
-        "GitHub.copilot-chat"
-      ],
-      "settings": {
-        "editor.formatOnSave": true,
-        "github.copilot.chat.codeGeneration.useInstructionFiles": true
-      }
+        "ms-azuretools.azure-dev",
+        "ms-azuretools.vscode-bicep"
+      ]
     }
   },
 
-  "postCreateCommand": "cd sample-app && npm install",
+  "forwardPorts": [],
 
-  "forwardPorts": [3000],
-  "portsAttributes": {
-    "3000": {
-      "label": "TaskMaster API",
-      "onAutoForward": "notify"
-    }
-  },
-
-  "remoteUser": "node"
+  "postCreateCommand": "npm install -g @moaw/cli"
 }
