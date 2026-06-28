@@ -1430,7 +1430,6 @@ After your first conversation:
 In a VS Code terminal (`` Ctrl+` ``):
 
 ```bash
-cd sample-app
 npm install
 npm run build
 npm test
