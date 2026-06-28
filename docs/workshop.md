@@ -19,7 +19,7 @@ sections_title:
   - "Agent Quality & Token Optimization : Hands-On Workshop"
   - "Concepts : Tool-Agnostic Mini-Labs"
   - "Track 01 : GitHub Copilot CLI"
-  - "Track 02 : VS Studio"
+  - "Track 02 : VS Code"
 ---
 
 # Agent Quality & Token Optimization : Hands-On Workshop
